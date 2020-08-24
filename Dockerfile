@@ -16,9 +16,13 @@ RUN apt-get update -qq && \
     libexpat1-dev libgmp-dev '^liblz4-.*' '^liblzma.*' libmpc-dev libmpfr-dev libncurses5-dev \
     libsdl1.2-dev libssl-dev libtool libxml2 libxml2-utils '^lzma.*' lzop \
     maven ncftp ncurses-dev patch patchelf pkg-config pngcrush \
-    pngquant python2.7 python-all-dev repo re2c sshpass schedtool squashfs-tools subversion \
+    pngquant python2.7 python-all-dev re2c sshpass schedtool squashfs-tools subversion \
     texinfo unzip w3m xsltproc zip zlib1g-dev lzip \
     libxml-simple-perl apt-utils
+
+# Repo
+RUN curl --create-dirs -L -o /usr/local/bin/repo -O -L https://storage.googleapis.com/git-repo-downloads/repo
+RUN chmod a+rx /usr/local/bin/repo
 
 RUN mkdir /root/komodo
 RUN cd /root/komodo
