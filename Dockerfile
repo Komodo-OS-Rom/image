@@ -26,5 +26,3 @@ RUN chmod a+rx /usr/local/bin/repo
 
 RUN mkdir /root/komodo
 RUN cd /root/komodo
-RUN repo init -u https://github.com/Komodo-OS-Rom/manifest -b ten
-RUN cd
