@@ -25,4 +25,4 @@ RUN curl --create-dirs -L -o /usr/local/bin/repo -O -L https://storage.googleapi
 RUN chmod a+rx /usr/local/bin/repo
 
 RUN mkdir /root/komodo
-RUN cd /root/komodo
+RUN mkdir /root/komodo-dev
