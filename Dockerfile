@@ -18,7 +18,7 @@ RUN apt-get update -qq && \
     maven ncftp ncurses-dev patch patchelf pkg-config pngcrush \
     pngquant python python2.7 python-all-dev re2c sshpass schedtool squashfs-tools subversion \
     texinfo unzip w3m xsltproc zip zlib1g-dev lzip \
-    libxml-simple-perl apt-utils wget
+    libxml-simple-perl apt-utils wget jq
 
 # Repo
 RUN curl --create-dirs -L -o /usr/local/bin/repo -O -L https://storage.googleapis.com/git-repo-downloads/repo
